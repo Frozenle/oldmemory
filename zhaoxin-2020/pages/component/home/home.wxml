@@ -1,0 +1,8 @@
+<!--pages/component/home/home.wxml-->
+<view class="homePage,backgroundImg">
+  <view class="mario2,marioImg,mario3Move"></view>
+  <view class="mario,marioImg,marioMove"></view>
+  <view class="challenge,challengeImg"></view>
+  <view class="flower,flowerImg"></view>
+  <view class="makewaves,makewavesImg"></view>
+</view>

@@ -1,0 +1,17 @@
+<!--pages/component/homePage/homePage.wxml-->
+<view class="homePage,homePageImg">
+  <block>
+    <view class="mario,marioImg,mario3Move" style="z-index: {{count == 1?marioShow:-1}}"></view>
+    <view class="mario2,marioImg,mario2Move" style="z-index: {{count == 2?marioShow:-1}}"></view>
+    <view class="mario2,marioImg,mario1Move" style="z-index: {{count == 3?marioShow:-1}}"></view>
+    <view class="mario,marioImg,marioMove" style="z-index: {{count == 4?marioShow:-1}}"></view>
+    <view class="mario2,marioImg,marioMove1" style="z-index: {{count == 5?marioShow:-1}}"></view>
+    <view class="mario2,marioImg,marioMove2" style="z-index: {{count == 6?marioShow:-1}}"></view>
+    <view class="mario2,marioImg,marioMove3" style="z-index: {{count == 7?marioShow:-1}}"></view>
+    <view class="mario,marioImg,marioMove4" style="z-index: {{count == 8?marioShow:-1}}"></view>
+    <view class="mario,marioImg,marioMove5" style="z-index: {{count == 9?marioShow:-1}}"></view>
+  </block>
+  <view class="challenge,challengeImg" style="z-index: {{count == 4 || count == 5?marioShow:-1}}"></view>
+  <view class="flower,flowerImg" animation="{{animation}}" style="z-index: {{count >=8 && count <=11?marioshow:-1}}"></view>
+  <view class="makewaves,makewavesImg" style="z-index: {{count >= 10 && count <= 11?marioShow:-1}}"></view>
+</view>

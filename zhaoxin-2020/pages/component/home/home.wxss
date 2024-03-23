@@ -1,0 +1,120 @@
+/* pages/component/home/home.wxss */
+@import "/img/img.wxss";
+
+.marioImg {
+  background-size: 100% 100%;
+  width: 80rpx;
+  height: 6%;
+}
+.mario3Move {
+  position: absolute;
+  bottom: 15%;
+  left: 20rpx;
+  animation: mario step-end 6s infinite;
+}
+.marioMove {
+  position: absolute;
+  bottom: 15%;
+  left: 20rpx;
+  animation: mario2 step-end 6s infinite;
+  z-index: -1;
+}
+@keyframes mario {
+  10% {
+    transform: translate3d(70rpx,155%,0);
+  }
+  20% {
+    transform: translate3d(150rpx,-18%,0);
+  }
+  30% {
+    transform: translate3d(220rpx,-140%,0);
+    z-index: -1;
+  }
+  40% {
+    transform: translate3d(295rpx,-18%,0);
+    z-index: 1;
+  }
+  50% {
+    transform: translate3d(345rpx,155%,0);
+  }
+  60% {
+    transform: translate3d(405rpx,-18%,0);
+  }
+  70% {
+    transform: translate3d(470rpx,-140%,0);
+    z-index: -1;
+  }
+}
+@keyframes mario2 {
+  30% {
+    z-index: 1;
+    transform: translate3d(220rpx,-140%,0);
+  }
+  40% {
+    z-index: -1;
+  }
+  70% {
+    z-index: 1;
+    transform: translate3d(470rpx,-140%,0);
+  }
+  80% {
+    transform: translate3d(600rpx,-15%,0);
+  }
+  90% {
+    z-index: -1;
+  }
+}
+.challengeImg {
+  background-size: 100% 100%;
+  position: absolute;
+  width: 350rpx;
+  height: 250rpx;
+  bottom: 35.2%;
+  left: 248rpx;
+  z-index: -1;
+  animation: challenge step-end 6s infinite;
+}
+@keyframes challenge {
+  30% {
+    z-index: 1;
+  }
+  45% {
+    z-index: -1;
+  }
+}
+.flowerImg {
+  background-size: 100% 100%;
+  width: 70rpx;
+  height: 7%;
+  position: absolute;
+  right: 176rpx;
+  bottom: 35.1%;
+  animation: flower step-end 6s infinite;
+  z-index: -1;
+}
+@keyframes flower {
+  70% {
+    z-index: 1;
+  }
+  78% {
+    transform: translateY(-150%);
+  }
+  88% {
+    transform: translateY(-350%);
+  }
+}
+.makewavesImg {
+  background-size: 100% 100%;
+  width: 300rpx;
+  height: 150rpx;
+  position: absolute;
+  bottom: 58%;
+  right: 260rpx;
+  animation: makewaves step-end 6s infinite;
+  z-index: -1;
+}
+@keyframes makewaves {
+  88% {
+    z-index: 1;
+  }
+}

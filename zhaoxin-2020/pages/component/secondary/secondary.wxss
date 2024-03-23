@@ -1,0 +1,42 @@
+/* pages/component/secondary/secondary.wxss */
+@import "/img/img.wxss";
+@import "../primary/primary.wxss";
+
+.heart {
+  position: absolute;
+  top: 31.5%;
+  left: 41%;
+}
+.heartImg {
+  width: 42rpx;
+  height: 42rpx;
+}
+.activeSecondary {
+  animation: activeSecondary 1s cubic-bezier(.67,.01,.38,1) both;
+}
+@keyframes activeSecondary
+{
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(8deg);
+  }
+  50%{
+    transform: rotate(0deg);
+  }
+  75%{
+    transform: rotate(-5deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+.showWarning3 {
+  position: absolute;
+  top: 85%;
+  font-size: 36rpx;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
